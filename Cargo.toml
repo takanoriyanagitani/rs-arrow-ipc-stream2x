@@ -1,0 +1,37 @@
+[package]
+name = "rs-arrow-ipc-stream2x"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+
+[[bin]]
+name = "arrow-ipc-stream2x"
+
+[dependencies.clap]
+version = "4"
+features = ["derive"]
+
+[dependencies.arrow]
+version = "57"
+default-features = false
+features = [
+	"ipc",
+]
+
+[dependencies.rust_xlsxwriter]
+version = "0"
+default-features = true
+features = ["chrono"]
+
+[dependencies.half]
+version = "2.4"
+features = ["use-intrinsics"]
+
+[dependencies.chrono]
+version = "0.4"
