@@ -3,6 +3,18 @@ name = "rs-arrow-ipc-stream2x"
 version = "0.1.0"
 edition = "2024"
 
+description = "Converts the ipc stream to a sheet."
+license = "Apache-2.0"
+repository = "https://github.com/takanoriyanagitani/rs-arrow-ipc-stream2x"
+homepage = "https://github.com/takanoriyanagitani/rs-arrow-ipc-stream2x"
+documentation = "https://docs.rs/rs-arrow-ipc-stream2x/latest"
+keywords = ["arrow", "ipc", "stream", "xlsx", "sheet"]
+category = ["command-line-utilities"]
+
+exclude = [
+	"arrow-ipc-stream2x",
+]
+
 [lints.rust]
 unsafe_code = "forbid"
 
